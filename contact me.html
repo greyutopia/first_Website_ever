@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contacts</title>
+  </head>
+  <body>
+    <h2>contact me through:</h2>
+    <ul>
+      <li>Email:sarahnedhal@gmail.com</li>
+      <li>phone number:34791212</li>
+    </ul>
+    <!--NOTE:action: means what will happen when you click the submit button
+  meaning when the u finish the form and  click submit where does it go
+the website or page that comes after the submmition is what the action attribute mean -->
+
+<!--NOTE: enctype means that when you write the mailto , and then you fill the form
+and then click the submit button it will lead you to a mail page where where in the
+email secton the email that you mentioned in mailto will appear there and and the
+enctype will be a plain text instead of weird text-->
+    <form  action="mailto:sarahnedhal@gmail.com" method="post" enctype="text/plain">
+      <!--in input the name attribute: is used when the user submit the form
+    and then mailto is used as an action attribute the value that is written inside
+  the name attribute will be displayed inside the content of the email as
+  name=
+  email=
+  message= -->
+  <!--NOTE: when we submit the form and we post this data that user inputted to
+our mail client then it knows how to classify each bit of the data example:
+this input should be labelled as name, email, and message-->
+
+      <label>your name:</label>
+      <input type="text" name="name">
+       <br>
+
+       <br>
+       <label>your email:</label>
+       <input type="email" name="email" value="">
+       <br>
+       <label>your message:</label>
+       <br>
+       <textarea name="message" rows="10" cols="30"></textarea>
+       <br>
+      <input type="submit">
+
+    </form>
+  </body>
+</html>
